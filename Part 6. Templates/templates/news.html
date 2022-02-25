@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Новости</title>
+</head>
+<body>
+    {% set x = 10 %}
+    {% for item in news['news'] %}
+        <h2>{{ item["title"] }}</h2>
+        <div>{{ item["content"] }}</div>
+        <h6>{{ x }}</h6>
+        <h6>{{ loop.index }}</h6>
+        <h6>{{ loop.index0 }}</h6>
+        <h6>{{ loop.first }}</h6>
+        <h6>{{ loop.last }}</h6>
+    {% endfor %}
+</body>
+</html>
