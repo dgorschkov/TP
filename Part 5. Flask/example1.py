@@ -110,7 +110,7 @@ def greeting(username='anonymus'):
 @app.route('/two_params/<username>/')
 def two_params(username, number=1):
     return f'''<!doctype html>
-                <html lang="en">
+                <html lang="ru">
                   <head>
                     <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -131,7 +131,7 @@ def two_params(username, number=1):
 
 
 
-@app.route('/form_sample', methods=['POST', 'GET'])
+@app.route('/form_sample/', methods=['POST', 'GET'])
 def form_sample():
     if request.method == 'GET':
         return f'''
@@ -207,11 +207,11 @@ def form_sample():
         print(request.form['sex'])
         return "<h1>Форма отправлена</h1>"
 
-@app.route('/sample_file_upload', methods=['POST', 'GET'])
+@app.route('/sample_file_upload/', methods=['POST', 'GET'])
 def sample_file_upload():
     if request.method == 'GET':
         return f'''<!doctype html>
-                        <html lang="en">
+                        <html lang="ru">
                           <head>
                             <meta charset="utf-8">
                             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
