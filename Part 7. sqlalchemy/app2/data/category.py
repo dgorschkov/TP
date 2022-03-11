@@ -11,6 +11,7 @@ association_table = sqlalchemy.Table('association', SqlAlchemyBase.metadata,
                                      )
 
 
+
 class Category(SqlAlchemyBase):
     __tablename__ = 'category'
     id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True, autoincrement=True)
