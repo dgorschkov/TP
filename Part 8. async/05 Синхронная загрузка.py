@@ -11,7 +11,6 @@ def get_file(i, url):
 
 def write_file(i, response):
     print(f"writing file number {i}")
-    uuid.uuid4()
     filename = response.url.split('/')[-1]
     filename = str(uuid.uuid4()) + '.' + filename.split('.')[-1]
     with open(f'img/{filename}', 'wb') as file:
